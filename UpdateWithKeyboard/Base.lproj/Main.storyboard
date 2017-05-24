@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJT-qq-nUa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gavin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-17-13n">
+                                        <rect key="frame" x="137.5" y="305.5" width="100" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Bmo-u7-5wc"/>
+                                            <constraint firstAttribute="height" constant="36" id="TZo-KR-gFz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="一个人的生命是应该这样度过的，当他回首往事的时候，他不会因虚度年华而悔恨，也不会因碌碌无为而羞耻" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bgk-pe-Nax">
+                                        <rect key="frame" x="0.0" y="519" width="375" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Gep-xb-Np1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bgk-pe-Nax" secondAttribute="bottom" id="8Wb-Y1-JvA">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateWithKeyboard" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="7IT-17-13n" firstAttribute="centerY" secondItem="HJT-qq-nUa" secondAttribute="centerY" id="8wJ-VE-yb5"/>
+                                    <constraint firstItem="7IT-17-13n" firstAttribute="centerX" secondItem="HJT-qq-nUa" secondAttribute="centerX" id="8zQ-Yt-fQ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="bgk-pe-Nax" secondAttribute="trailing" id="kte-Lx-krQ"/>
+                                    <constraint firstItem="bgk-pe-Nax" firstAttribute="leading" secondItem="HJT-qq-nUa" secondAttribute="leading" id="z1A-o0-vR7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HJT-qq-nUa" secondAttribute="bottom" id="DT1-HD-vDG"/>
+                            <constraint firstItem="HJT-qq-nUa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cHM-3T-OvA"/>
+                            <constraint firstItem="HJT-qq-nUa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iOm-X5-5pu"/>
+                            <constraint firstAttribute="trailing" secondItem="HJT-qq-nUa" secondAttribute="trailing" id="onH-4F-zBq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="bgk-pe-Nax" id="ZSl-p2-3B1"/>
+                        <outlet property="textViewBottomConstrait" destination="8Wb-Y1-JvA" id="w5g-GY-Zd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 		4F472A551ED57F7A00D078EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F472A531ED57F7A00D078EB /* Main.storyboard */; };
 		4F472A571ED57F7A00D078EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F472A561ED57F7A00D078EB /* Assets.xcassets */; };
 		4F472A5A1ED57F7A00D078EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F472A581ED57F7A00D078EB /* LaunchScreen.storyboard */; };
+		4F472A631ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F472A621ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4F472A561ED57F7A00D078EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F472A591ED57F7A00D078EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F472A5B1ED57F7A00D078EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F472A611ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+updateWithKeyboard.h"; sourceTree = "<group>"; };
+		4F472A621ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+updateWithKeyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				4F472A4E1ED57F7A00D078EB /* AppDelegate.m */,
 				4F472A501ED57F7A00D078EB /* ViewController.h */,
 				4F472A511ED57F7A00D078EB /* ViewController.m */,
+				4F472A611ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.h */,
+				4F472A621ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m */,
 				4F472A531ED57F7A00D078EB /* Main.storyboard */,
 				4F472A561ED57F7A00D078EB /* Assets.xcassets */,
 				4F472A581ED57F7A00D078EB /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F472A521ED57F7A00D078EB /* ViewController.m in Sources */,
+				4F472A631ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m in Sources */,
 				4F472A4F1ED57F7A00D078EB /* AppDelegate.m in Sources */,
 				4F472A4C1ED57F7A00D078EB /* main.m in Sources */,
 			);
@@ -314,6 +320,7 @@
 				4F472A601ED57F7A00D078EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

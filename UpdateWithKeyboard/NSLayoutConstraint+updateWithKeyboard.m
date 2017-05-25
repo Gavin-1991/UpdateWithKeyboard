@@ -46,13 +46,19 @@ static char const * const deallocHelperKey  = "DeallocHelper";
 
 - (void)setUpdateWithKeyboard:(BOOL)updateWithKeyboard
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification object:nil];
+    self.initalHeight = @(self.constant);
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    if (updateWithKeyboard)
+    {
+        [self setupDeallocHelper];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillShow:)
+                                                     name:UIKeyboardWillShowNotification object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(keyboardWillHide:)
+                                                     name:UIKeyboardWillHideNotification object:nil];
+    }
 }
 
 - (void)keyboardWillShow:(NSNotification *)aNotification
@@ -169,7 +175,6 @@ static char const * const deallocHelperKey  = "DeallocHelper";
     {
         self.constant = height + [self.initalHeight floatValue];
     }
-
 }
 
 @end

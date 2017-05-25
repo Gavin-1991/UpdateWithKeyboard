@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B2f-PC-afk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJT-qq-nUa">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gavin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-17-13n">
-                                        <rect key="frame" x="137.5" y="305.5" width="100" height="36"/>
+                                        <rect key="frame" x="137.5" y="283.5" width="100" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Bmo-u7-5wc"/>
                                             <constraint firstAttribute="height" constant="36" id="TZo-KR-gFz"/>
@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="一个人的生命是应该这样度过的，当他回首往事的时候，他不会因虚度年华而悔恨，也不会因碌碌无为而羞耻" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bgk-pe-Nax">
-                                        <rect key="frame" x="0.0" y="519" width="375" height="128"/>
+                                        <rect key="frame" x="0.0" y="475" width="375" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="Gep-xb-Np1"/>
@@ -43,6 +43,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABS-Kk-naU">
+                                        <rect key="frame" x="147" y="165" width="80" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="kby-uQ-2ag"/>
+                                            <constraint firstAttribute="height" constant="36" id="lAe-rs-g02"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="CUt-CW-zhW" kind="show" id="5iL-aM-SK5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -53,6 +65,8 @@
                                     </constraint>
                                     <constraint firstItem="7IT-17-13n" firstAttribute="centerY" secondItem="HJT-qq-nUa" secondAttribute="centerY" id="8wJ-VE-yb5"/>
                                     <constraint firstItem="7IT-17-13n" firstAttribute="centerX" secondItem="HJT-qq-nUa" secondAttribute="centerX" id="8zQ-Yt-fQ4"/>
+                                    <constraint firstItem="ABS-Kk-naU" firstAttribute="centerX" secondItem="HJT-qq-nUa" secondAttribute="centerX" id="FTr-QV-fOG"/>
+                                    <constraint firstItem="7IT-17-13n" firstAttribute="top" secondItem="ABS-Kk-naU" secondAttribute="bottom" constant="82.5" id="c0a-gU-zeH"/>
                                     <constraint firstAttribute="trailing" secondItem="bgk-pe-Nax" secondAttribute="trailing" id="kte-Lx-krQ"/>
                                     <constraint firstItem="bgk-pe-Nax" firstAttribute="leading" secondItem="HJT-qq-nUa" secondAttribute="leading" id="z1A-o0-vR7"/>
                                 </constraints>
@@ -66,6 +80,7 @@
                             <constraint firstAttribute="trailing" secondItem="HJT-qq-nUa" secondAttribute="trailing" id="onH-4F-zBq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QwO-hF-SBe"/>
                     <connections>
                         <outlet property="textView" destination="bgk-pe-Nax" id="ZSl-p2-3B1"/>
                         <outlet property="textViewBottomConstrait" destination="8Wb-Y1-JvA" id="w5g-GY-Zd7"/>
@@ -73,6 +88,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079.2" y="102.99850074962519"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Zag-NK-EKf">
+            <objects>
+                <viewController id="CUt-CW-zhW" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A5b-Ux-j0Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="SUg-9l-Kfm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KzU-Ts-YAE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHx-At-rX5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gavin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5j-3P-eIg">
+                                        <rect key="frame" x="137.5" y="283.5" width="100" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0cS-Ab-h5c"/>
+                                            <constraint firstAttribute="height" constant="36" id="rrZ-pb-scn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="一个人的生命是应该这样度过的，当他回首往事的时候，他不会因虚度年华而悔恨，也不会因碌碌无为而羞耻" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="naT-aB-eRl">
+                                        <rect key="frame" x="0.0" y="475" width="375" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="ZiG-Dz-ov9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="naT-aB-eRl" firstAttribute="leading" secondItem="dHx-At-rX5" secondAttribute="leading" id="IqV-zB-z7U"/>
+                                    <constraint firstAttribute="bottom" secondItem="naT-aB-eRl" secondAttribute="bottom" id="Nbl-t5-bHw">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateWithKeyboard" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="d5j-3P-eIg" firstAttribute="centerY" secondItem="dHx-At-rX5" secondAttribute="centerY" id="k2o-Dr-F1n"/>
+                                    <constraint firstItem="d5j-3P-eIg" firstAttribute="centerX" secondItem="dHx-At-rX5" secondAttribute="centerX" id="mhW-F4-2qw"/>
+                                    <constraint firstAttribute="trailing" secondItem="naT-aB-eRl" secondAttribute="trailing" id="vyn-0E-TX1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dHx-At-rX5" firstAttribute="top" secondItem="A5b-Ux-j0Y" secondAttribute="bottom" id="5Zf-Un-WQu"/>
+                            <constraint firstAttribute="trailing" secondItem="dHx-At-rX5" secondAttribute="trailing" id="bGc-Ne-c0l"/>
+                            <constraint firstItem="SUg-9l-Kfm" firstAttribute="top" secondItem="dHx-At-rX5" secondAttribute="bottom" id="frR-df-yps"/>
+                            <constraint firstItem="dHx-At-rX5" firstAttribute="leading" secondItem="KzU-Ts-YAE" secondAttribute="leading" id="pUx-Up-48j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="naT-aB-eRl" id="jHd-Kh-Nvu"/>
+                        <outlet property="textViewBottomConstrait" destination="Nbl-t5-bHw" id="agD-ZJ-blV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gs6-pM-oCS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="102.99850074962519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3x2-VE-qpp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B2f-PC-afk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cCZ-2a-eRc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hwt-Bp-tZ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3b-sv-eDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="-579.76011994002999"/>
         </scene>
     </scenes>
 </document>

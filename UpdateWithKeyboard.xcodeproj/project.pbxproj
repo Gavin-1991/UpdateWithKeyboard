@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1981151ED676CF007994A4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1981141ED676CF007994A4 /* SecondViewController.m */; };
 		4F472A4C1ED57F7A00D078EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F472A4B1ED57F7A00D078EB /* main.m */; };
 		4F472A4F1ED57F7A00D078EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F472A4E1ED57F7A00D078EB /* AppDelegate.m */; };
 		4F472A521ED57F7A00D078EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F472A511ED57F7A00D078EB /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F1981131ED676CF007994A4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4F1981141ED676CF007994A4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		4F472A471ED57F7A00D078EB /* UpdateWithKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpdateWithKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F472A4B1ED57F7A00D078EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F472A4D1ED57F7A00D078EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 				4F472A4E1ED57F7A00D078EB /* AppDelegate.m */,
 				4F472A501ED57F7A00D078EB /* ViewController.h */,
 				4F472A511ED57F7A00D078EB /* ViewController.m */,
+				4F1981131ED676CF007994A4 /* SecondViewController.h */,
+				4F1981141ED676CF007994A4 /* SecondViewController.m */,
 				4F472A611ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.h */,
 				4F472A621ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m */,
 				4F472A531ED57F7A00D078EB /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1981151ED676CF007994A4 /* SecondViewController.m in Sources */,
 				4F472A521ED57F7A00D078EB /* ViewController.m in Sources */,
 				4F472A631ED582FC00D078EB /* NSLayoutConstraint+updateWithKeyboard.m in Sources */,
 				4F472A4F1ED57F7A00D078EB /* AppDelegate.m in Sources */,
